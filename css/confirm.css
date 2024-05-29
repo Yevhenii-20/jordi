@@ -1,0 +1,927 @@
+body {
+    margin: 0;
+  }
+.button {
+  display: block;
+  height: 70px;
+  font-family: Montserrat, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 70px;
+  letter-spacing: -1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 25px;
+  margin: 0;
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  background: #f60;
+}
+.button span {
+  position: relative;
+  z-index: 1;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+.inner-block {
+  width: 940px;
+  margin: auto;
+}
+.no-plus::before {
+  content: none !important;
+}
+.inner-page .inner-block {
+  width: 970px;
+}
+.confirmation-section {
+  font-family: "Open Sans", sans-serif;
+  padding: 37px 0 0;
+}
+.confirmation-section h2 {
+  font-size: 50px;
+  color: #000;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 0 0 22px;
+  margin: 0;
+}
+.confirmation-section h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #ef4b52;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 0 0 4px;
+  margin: 0;
+}
+.confirmation-section h4 {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 0 19px;
+}
+.confirmation-section .info {
+  margin: 0 auto 40px;
+}
+.confirmation-section .info .inner-block {
+  max-width: 940px;
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+  padding: 19px 0 11px;
+  position: relative;
+  border-radius: 12px;
+  border: 3px solid #69c03b;
+  background: #fff;
+}
+.confirmation-section .info h4 {
+  color: #69c03b;
+  padding: 4px 0 14px;
+  margin: 0;
+}
+.confirmation-section .contacts {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding: 22px 0 31px;
+  border-top: 1px dashed #ccc;
+  background: #fff;
+}
+.confirmation-section .contacts h4 {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 0 9px;
+}
+.confirmation-section .form {
+  text-align: center;
+  padding: 32px 0 40px;
+  border-top: 1px dashed #ccc;
+}
+.confirmation-section .form h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 0 5px;
+}
+.confirmation-section .form p {
+  padding: 0;
+}
+.confirmation-section .form form {
+  padding: 21px 0 0;
+  overflow: visible;
+}
+.confirmation-section .form form input[type="text"] {
+  width: 720px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 58px;
+  padding: 0 15px 5px;
+  border-radius: 5px;
+}
+.confirmation-section .form form input[type="text"]::-webkit-input-placeholder {
+  color: #52585d;
+  font-size: 20px;
+  font-style: normal;
+}
+.confirmation-section .form form input[type="text"]::-moz-placeholder {
+  color: #52585d;
+  font-size: 20px;
+  font-style: normal;
+}
+.confirmation-section .form form input[type="text"]:-moz-placeholder {
+  color: #52585d;
+  font-size: 20px;
+  font-style: normal;
+}
+.confirmation-section .form form input[type="text"]:-ms-input-placeholder {
+  color: #52585d;
+  font-size: 20px;
+  font-style: normal;
+}
+.confirmation-section .form form input[type="text"]:focus {
+  font-size: 20px;
+  border: 1px solid #aaa;
+}
+.inner-page .footer-menu {
+  padding: 0 0 10px;
+}
+.inner-page footer {
+  top: 0 !important;
+}
+.confirmation-section .form form .button {
+  width: 200px;
+}
+.confirmation-section .form form button.button {
+  height: 60px;
+  font-size: 20px;
+  line-height: 60px;
+  padding: 0 20px 5px;
+  border-radius: 5px;
+}
+.confirmation-section .important {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 29px 0 15px;
+  border-top: 1px dashed #ccc;
+  background: #fff;
+}
+.left.error {
+  border: 1px solid red;
+}
+.confirmation-section .important h4 {
+  font-size: 18px;
+  color: #f3351b;
+  text-align: center;
+  padding: 0 0 9px;
+  margin: 0;
+}
+.header-section.confirmation .lock img {
+  width: 44px;
+  margin: 20px 0 0;
+}
+.header-section.confirmation {
+  padding: 0 0 20px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.footer-menu li a {
+  padding: 0 10px 0 8px;
+  text-decoration: none;
+  color: #dadada;
+  border-right: 1px solid #dadada;
+}
+.footer-menu li {
+  display: inline;
+  padding: 0;
+  font-size: 12px;
+}
+.inner-footer p {
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+.copyright {
+  margin: 10px 0 30px;
+  font-size: 12px;
+  text-align: center;
+}
+.confirmation-page .row {
+  margin: 0;
+}
+.inner-page .popup-wrapper,
+footer {
+  max-width: none !important;
+  color: #000 !important;
+}
+.footer-menu li:last-child a {
+  border-right: none;
+}
+.footer-menu li a {
+  color: #000 !important;
+}
+input,
+select {
+  outline: none;
+}
+
+.confirmation-section .error-message {
+  height: 32px;
+  display: none;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  white-space: nowrap;
+  padding: 0 10px;
+  margin: 0 35px 0 0;
+  position: absolute;
+  right: 100%;
+  top: 1px;
+  z-index: 16;
+  border-radius: 3px 0 0 3px;
+  background: #ef4b52;
+}
+.confirmation-section .has-error .error-message {
+  display: block;
+}
+.popup h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 34px;
+  text-indent: 0;
+}
+.popup h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-indent: 0;
+}
+.popup {
+  font-family: sans-serif;
+}
+.cvv-image {
+  display: none;
+  text-align: center;
+  padding: 0 0 0;
+}
+.cvv-image img {
+  width: 190px;
+  margin: auto;
+}
+.footer-info {
+  margin: 0 !important;
+}
+.inner-page .container.cf {
+  padding: 0 0 50px;
+}
+
+.more-bottle {
+  border: 1px solid #DDD;
+  background: #F2F2F2;
+  margin-top: 25px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.buy-text {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.buy-button {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #2E7AEC;
+  box-shadow: 0px 12px 8px -8px rgba(6, 70, 165, 0.28);
+  padding: 12px;
+
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.buy-button:hover {
+  color: #fff;
+}
+
+.buy-button > span {
+  padding-left: 10px;
+}
+
+.fot-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.price-block {
+  background: url(../img/confirm/bg-con.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.rebate-col {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.savings {
+  color: #333;
+  font-family: 'Montserrat';
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.savings .mark-1 {
+  font-weight: 500;
+}
+
+.savings .mark {
+  font-family: "Montserrat", sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: #fe2321;
+  background: none;
+}
+
+.header-left h2 {
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.customer-support {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.order-titl {
+  color: #333;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+  
+@media screen and (max-width: 1199px) {
+  .formBody button {
+    height: 68px;
+    background-size: 100% auto;
+  }
+  .col-md-2 {
+    width: 17%;
+  }
+
+  .customer-support .local-phone {
+    display: block;
+  }
+}
+@media screen and (max-width: 990px) {
+  .confirmation-page .popup-wrapper .popup {
+    padding: 10px;
+  }
+  .buy-text {
+    font-size: 13px;
+  }
+
+  .more-bottle {
+    padding: 10px;
+  }
+
+  .buy-button {
+    padding: 7px;
+  }
+
+  .buy-button > span {
+    padding-left: 5px;
+  }
+  .formBody button {
+    height: 54px;
+  }
+  .main-page .formTop {
+    font-size: 26px;
+  }
+  #wrapper {
+    width: auto;
+  }
+  .inner-block,
+  .inner-page .inner-block {
+    width: auto;
+    padding: 0 15px;
+  }
+  .confirmation-section {
+    padding: 35px 0 0;
+  }
+  .confirmation-section h2 {
+    font-size: 42px;
+    line-height: 42px;
+    padding: 0 0 23px;
+  }
+  .confirmation-section h3 {
+    font-size: 26px;
+    padding: 0;
+  }
+  .confirmation-section .form form input[type="text"] {
+    width: 100%;
+  }
+  .confirmation-section .form form button.button {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .popup-wrapper .popup {
+    max-width: none;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .popup-wrapper .popup h3 {
+    padding: 0 0 12px;
+  }
+  .popup-wrapper .popup p + h3,
+  .popup-wrapper .popup ul + h3 {
+    padding: 0 0 12px;
+  }
+  .popup-wrapper #popup-declined .reason {
+    padding: 24px 70px 23px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .popup-wrapper #popup-declined form .buttonP {
+    width: 100% !important;
+  }
+  .confirmation-section .info .inner-block {
+    padding: 15px 10px;
+  }
+  .popup-wrapper #popup-declined .tip .text {
+    width: 300px;
+    text-align: left;
+  }
+  .main-page .row {
+    margin: 0;
+  }
+  .popup-wrapper #popup-declined form .form-holder.cvv-code .cvv-image {
+    padding: 15px 0 0;
+  }
+  .popup-wrapper #popup-declined .popup-inner {
+    padding: 27px 15px 40px;
+  }
+  .popup-wrapper .popup .form-popup .form-holder input[type="email"],
+  .popup-wrapper .popup .form-popup .form-holder input[type="text"],
+  .popup-wrapper .popup .form-popup .form-holder select {
+    width: 100%;
+  }
+  .popup-wrapper .popup .popup-inner {
+    padding: 34px 30px 40px;
+  }
+  .popup-wrapper #popup-declined form .form-holder label {
+    display: block;
+    width: 100% !important;
+  }
+  .popup-wrapper #popup-declined form .button {
+    margin: 15px 0 !important;
+    width: 100% !important;
+  }
+  .popup-wrapper #popup-declined .reason {
+    padding: 23px 15px 25px !important;
+  }
+  .popup-wrapper #popup-declined form .form-holder input[type="tel"] {
+    width: 100% !important;
+    max-width: 237px;
+  }
+  .popup-wrapper #popup-declined form .form-holder select,
+  .popup-wrapper #popup-declined form .form-holder.cvv-code input[type="tel"] {
+    width: 115px !important;
+  }
+  .popup-wrapper .popup .form-popup .form-holder input[type="email"],
+  .popup-wrapper .popup .form-popup .form-holder input[type="text"],
+  .popup-wrapper .popup .form-popup .form-holder select {
+    height: 37px;
+  }
+  .popup input[type="email"],
+  .popup input[type="number"],
+  .popup input[type="password"],
+  .popup input[type="tel"],
+  .popup input[type="text"],
+  .popup select,
+  .popup textarea {
+    height: 37px;
+  }
+  .popup-wrapper #popup-declined form .form-holder label {
+    line-height: 18px;
+  }
+  .popup-wrapper #popup-declined form .form-holder.cvv-code .cvv-image {
+    padding: 10px 0 0 !important;
+  }
+  .popup-wrapper #popup-declined form .button {
+    margin: 15px 0 !important;
+    width: 235px !important;
+  }
+  .error-message:after {
+    display: none;
+  }
+  .logo {
+    width: 147px;
+  }
+  .popup-wrapper .popup .form-popup .form-holder input[type="email"],
+  .popup-wrapper .popup .form-popup .form-holder input[type="tel"],
+  .popup-wrapper .popup .form-popup .form-holder input[type="text"],
+  .popup-wrapper .popup .form-popup .form-holder select {
+    max-width: 70%;
+  }
+  .confirmation-section h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .confirmation-section h3 {
+    font-size: 17px;
+  }
+  .confirmation-section .form h4 {
+    font-size: 19px;
+  }
+  .confirmation-page .confirmation-section .form form .button {
+    width: 180px;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .formBox.center-block {
+    margin: 0 auto 50px;
+  }
+  .confirmation-section .error-message,
+  .confirmation-section .form-holder.exp-date .error-message {
+    height: auto;
+    font-size: 12px;
+    color: #ef4b52;
+    line-height: 22px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: 0 0;
+  }
+  .error-message:after {
+    display: none;
+  }
+  .formBox center img {
+    width: auto;
+  }
+  .stayingKetosis h2 {
+    line-height: 80px;
+  }
+  .formBody button {
+    height: 90px;
+    background-size: auto;
+    background-position: center;
+  }
+  .confirmation-page .inner-block {
+    width: 440px;
+  }
+  .confirmation-page .form form input[type="text"] {
+    width: 242px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 320px;
+  }
+  #theproof img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+  .confirmation-page .inner-block {
+    width: 300px;
+  }
+  .confirmation-section h3 {
+    line-height: 22px;
+    padding: 0 0 10px;
+  }
+  .confirmation-section h4 {
+    font-size: 17px;
+  }
+  .confirmation-page .confirmation-section .form form .button,
+  .confirmation-page .form form input[type="text"] {
+    width: 100%;
+    margin: 0 0 10px;
+    float: none;
+  }
+  .popup textarea,
+  .popup-wrapper .popup .form-popup .form-holder input[type="email"],
+  .popup-wrapper .popup .form-popup .form-holder input[type="text"],
+  .popup-wrapper .popup .form-popup .form-holder select {
+    width: 100%;
+  }
+  .popup-wrapper .popup h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .formBody button {
+    height: 90px;
+    background-size: 100% auto;
+  }
+  .navbar-brand {
+    letter-spacing: -0.5px;
+    padding: 10px 0 0;
+  }
+  .c2abtn {
+    font-size: 26px;
+  }
+  #theproof img,
+  .vsdwn img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-height: 340px) {
+  .popup-loading-wrapper .popup p,
+  .popup-proc-wrapper .popup p {
+    padding: 3px 0;
+  }
+  .popup-loading-wrapper .popup h2,
+  .popup-proc-wrapper .popup h2 {
+    padding: 2px 0 7px;
+  }
+}
+.confirmation .l-grid {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.confirmation footer ul {
+  margin: 0;
+  padding: 0;
+}
+.confirmation .b-disclaimer p {
+  margin: 0;
+}
+.confirmation .b-disclaimer {
+  background: #f8f8f8;
+  color: #454545;
+  border-top: 1px solid #d9d3d3;
+  padding: 35px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+#disclaimer {
+  color: #1C1C28;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#disclaimer p {
+  padding-bottom: 10px;
+}
+.confirmation footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.confirmation footer ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fdfdfd;
+}
+.confirmation .b-footer {
+  position: static;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 0;
+  background: #7e7d84;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .transaction-conf .savings h3 {
+    font-size: 45px;
+  }
+  .transaction-conf .savings .invoice div {
+    font-size: 23px;
+  }
+  .transaction-conf .descriptionTransaction p {
+    font-size: 22px;
+  }
+  .transaction-conf .descriptionTransaction .descriptionId {
+    top: 20px;
+    font-size: 36px;
+  }
+  .transaction-conf .savings .invoice {
+    max-width: 590px;
+  }
+  .transaction-conf .savings .invoice .conf-name {
+    font-size: 28px;
+  }
+}
+@media (max-width: 995px) {
+  .transaction-conf .savings {
+    padding-left: 10px;
+  }
+  .buy-more__left span {
+    margin-top: 19px;
+    max-width: 90%;
+  }
+  .transaction-conf .savings h3 {
+    font-size: 34px;
+  }
+  .transaction-conf .descriptionTransaction p {
+    font-size: 20px;
+  }
+  .transaction-conf .descriptionTransaction .descriptionId {
+    font-size: 34px;
+  }
+  .transaction-conf .thumbs-up {
+    position: absolute;
+    bottom: 0;
+    right: -13px;
+  }
+  .transaction-conf .savings .invoice div {
+    font-size: 19px;
+    line-height: 35px;
+  }
+  .transaction-conf .savings .invoice:before {
+    width: 19px;
+    height: 16px;
+    left: -30px;
+    top: 13px;
+  }
+  .transaction-conf .savings .invoice {
+    left: 30px;
+  }
+  .transaction-conf .descriptionId {
+    font-size: 38px;
+  }
+  .thumbsup {
+    width: 192px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .transaction-conf .savings h3 {
+    font-size: 28px;
+    line-height: 55px;
+    margin-bottom: -5px;
+  }
+  .buy-more__left span {
+    max-width: 266px;
+  }
+  .transaction-conf .savings {
+    padding-left: 0;
+  }
+  .transaction-conf .savings .invoice .conf-name {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .transaction-conf .savings .invoice .conf-price {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .transaction-conf .savings .invoice:before {
+    width: 16px;
+    height: 14px;
+    left: -25px;
+    top: 10px;
+  }
+  .transaction-conf .savings .invoice {
+    left: 25px;
+  }
+  .transaction-conf .savings .invoice .conf-name {
+    margin-right: 5px;
+  }
+  .transaction-conf {
+    padding: 15px 0;
+  }
+  .transaction-conf .descriptionId {
+    font-size: 25px;
+    text-align: center;
+  }
+  .transaction-conf {
+    border: 4px solid #000;
+  }
+  .transaction-conf .descriptionTransaction .descriptionId {
+    position: static;
+    font-size: 24px;
+  }
+  .transaction-conf .descriptionTransaction {
+    max-width: 340px;
+  }
+  .transaction-conf .descriptionTransaction p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .transaction-conf .savings .invoice {
+    max-width: 350px;
+  }
+}
+@media (max-width: 580px) {
+  .transaction-conf .col-sm-9,
+  .transaction-conf .col-xs-12 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .transaction-conf .thumbs-up {
+    display: none;
+  }
+  .transaction-conf {
+    overflow-x: hidden;
+  }
+  .transaction-conf .savings .invoice {
+    max-width: 90%;
+  }
+}
+@media (max-width: 460px) {
+  .buy-more__left span {
+    margin-top: 19px;
+    max-width: 199px;
+    font-size: 14px;
+  }
+  .buy-more__right {
+    width: 128px;
+    margin-left: 5px;
+  }
+  .buy-more__left {
+    width: calc(100% - 133px);
+  }
+}
+@media (max-width: 351px) {
+  .buy-more__left span {
+    margin-top: 9px;
+  }
+}
+@media (max-width: 430px) {
+  .transaction-conf .savings h3 {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 0;
+  }
+  .transaction-conf .descriptionTransaction p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .transaction-conf .descriptionTransaction p {
+    font-size: 14px;
+  }
+}
