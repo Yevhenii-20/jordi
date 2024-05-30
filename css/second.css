@@ -571,7 +571,7 @@ body.active {
 
 @media screen and (max-width: 500px) {
     .swiper-button-next, .swiper-button-prev {
-        border: 1px solid var(--mainColor);
+        border: 1px solid #efefef;
         background: #fff;
         width: 30px!important;
         height: 30px!important;
