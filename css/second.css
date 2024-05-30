@@ -127,6 +127,7 @@ body {
 
 .testimonios-slider__item {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .testimonios-slider__item p {
@@ -217,7 +218,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     z-index: 99;
     display: none;
 
@@ -297,9 +298,8 @@ body.active {
 }
 
 .modal-form__checkbox {
-    display: flex;
-    align-items: flex-start;
     margin-top: 15px;
+    font-family: "DM Sans", Sans-serif;
 }
 
 .modal-form__checkbox input {
@@ -313,9 +313,8 @@ body.active {
 
 .modal-form__checkbox label {
     font-size: 14px;
-    line-height: 18px;
-    display: block;
-    padding-left: 7px;
+    line-height: 23px;
+    padding-left: 3px;
     text-align: left;
     font-weight: 300;
 }
@@ -389,6 +388,7 @@ body.active {
     animation: animated-headline-dash forwards;
     animation-duration: var(--animation-duration,1.2s);
     animation-iteration-count: 1;
+    animation-delay: 1.5s;
 }
 
 .animated-headline.e-animated svg path:nth-of-type(2) {
@@ -445,6 +445,10 @@ body.active {
 
 .animated-headline-dynamic-wrapper .animated-headline-dynamic-text.animated-headline-text-active {
     position: relative
+}
+
+.modal-form__checkbox label a {
+    color: var(--mainColor);
 }
 
 
@@ -553,18 +557,32 @@ body.active {
         margin-top: 40px;
     }
     .modal-body {
-        width: 96%;
-        padding: 15px;
+        width: 91%;
+        padding: 20px;
+        height: 480px;
     }
 
     .modal-title {
         margin-top: 20px;
-        font-size: 30px;
-        line-height: 37px;
+        font-size: 22px;
+        line-height: 27px;
     }
 
     .modal-title br {
         display: none;
+    }
+
+    .modal-form__input input:nth-child(1) {
+        margin-bottom: 8px;
+    }
+
+    .modal-form__checkbox {
+        margin-top: 35px;
+    }
+
+    .modal-form__button {
+        margin-top: 30px;
+        padding: 12px 35px;
     }
 }
 
@@ -600,5 +618,9 @@ body.active {
 
     .swiper-button-next::after, .swiper-button-prev::after {
         font-size: 20px!important;
+    }
+
+    .testimonios-slider__item {
+        padding-bottom: 45px;
     }
 }

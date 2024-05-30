@@ -166,6 +166,8 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -204,6 +206,13 @@
     <script>
         new Swiper('.testimonios-slider', {
             loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -226,6 +235,7 @@
         }
 
         setInterval(toggleClass, 5000);
+
     </script>
 </body>
 </html>
