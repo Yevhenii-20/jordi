@@ -229,10 +229,11 @@ body {
 .modal.active {
     display: block;
     animation: fadeIn ease 0.3s;
-
-
 }
 
+body.active {
+    overflow: hidden;
+}
   
  /* @keyframes fadeIn{
     0% {

@@ -1,4 +1,5 @@
 let popupBg = document.querySelector('.modal');
+let popupBody = document.querySelector('body');
 let popup = document.querySelector('.modal');
 let openPopupButtons = document.querySelectorAll('.open-popup');
 let closePopupButton = document.querySelector('.close-popup');
@@ -8,6 +9,7 @@ openPopupButtons.forEach((button) => {
         e.preventDefault();
         popupBg.classList.add('active');
         popup.classList.add('active');
+        popupBody.classList.add('active');
 
         setTimeout(function () {
             popup.style.opacity = 1;
@@ -19,6 +21,8 @@ openPopupButtons.forEach((button) => {
 closePopupButton.addEventListener('click',() => {
     popup.style.opacity = 0;
     popupBg.style.opacity = 0;
+
+    popupBody.classList.remove('active');
 
 
     setTimeout(function () {
@@ -32,6 +36,8 @@ document.addEventListener('click', (e) => {
 
         popup.style.opacity = 0;
         popupBg.style.opacity = 0;
+
+        popupBody.classList.add('active');
 
 
         setTimeout(function () {
