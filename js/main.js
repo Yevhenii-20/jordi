@@ -8,18 +8,36 @@ openPopupButtons.forEach((button) => {
         e.preventDefault();
         popupBg.classList.add('active');
         popup.classList.add('active');
+
+        setTimeout(function () {
+            popup.style.opacity = 1;
+            popupBg.style.opacity = 1;
+          }, 300);
     })
 });
 
 closePopupButton.addEventListener('click',() => {
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
+    popup.style.opacity = 0;
+    popupBg.style.opacity = 0;
+
+
+    setTimeout(function () {
+        popupBg.classList.remove('active');
+        popup.classList.remove('active');
+      }, 300);
 });
 
 document.addEventListener('click', (e) => {
     if(e.target === popupBg) {
-        popupBg.classList.remove('active');
-        popup.classList.remove('active');
+
+        popup.style.opacity = 0;
+        popupBg.style.opacity = 0;
+
+
+        setTimeout(function () {
+            popupBg.classList.remove('active');
+            popup.classList.remove('active');
+          }, 300);
     }
 });
 

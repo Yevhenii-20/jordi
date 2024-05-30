@@ -116,15 +116,7 @@ body {
     position: relative;
 }
 
-.tesimonios-title span svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    transform: translate(-45%, -40%);
-    overflow: visible;
-}
+
 
 .slider-item__img img {
     border-radius: 50%;
@@ -175,6 +167,7 @@ body {
 
 .swiper-button-next, .swiper-button-prev {
     top: 120px!important;
+    color: #efefef!important;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -225,13 +218,42 @@ body {
     left: 0;
     top: 0;
     background: rgba(0,0,0,0.5);
-    display: none;
     z-index: 99;
+    display: none;
+
+
+    opacity:0;
+    transition:  0.3s; 
 }
 
 .modal.active {
     display: block;
+    animation: fadeIn ease 0.3s;
+
+
 }
+
+  
+ /* @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @keyframes fadeOut{
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }*/
+
+
+
 
 .modal-body {
     background: #FFFFFF;
@@ -329,7 +351,146 @@ body {
     position: absolute;
     left: 0;
     bottom: -2px;
+    animation: 0.3s linear underSlide;
 }
+
+
+
+.animated-title svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    transform: translate(-50%,-50%);
+    overflow: visible;
+}
+
+.animated-title svg path {
+    stroke: var(--mainColor);
+    stroke-width: 7;
+    fill: none;
+    opacity: 0;
+    stroke-dasharray: 0 1500;
+    transition: .3s;
+}
+
+.tesimonios-title svg path {
+    stroke-width: 9;
+}
+
+.tesimonios-title svg {
+    transform: translate(-50%,-45%);
+}
+
+
+.animated-headline.e-animated svg path {
+    animation: animated-headline-dash forwards;
+    animation-duration: var(--animation-duration,1.2s);
+    animation-iteration-count: 1;
+}
+
+.animated-headline.e-animated svg path:nth-of-type(2) {
+    animation-delay: calc(var(--animation-duration, 1.2s) / 2);
+}
+
+.animated-headline.e-hide-highlight svg path {
+    opacity: 1;
+    stroke-dasharray: 1500 1500;
+    animation: hide-highlight .4s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes animated-headline-dash {
+    0% {
+        stroke-dasharray: 0 1500;
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dasharray: 1500 1500;
+        opacity: 1;
+       
+    }
+}
+
+@keyframes hide-highlight {
+    0% {
+        opacity: 1;
+        stroke-dasharray: 1500 1500
+    }
+
+    to {
+        opacity: 0;
+        filter: blur(10px)
+    }
+}
+
+.animated-headline-text-wrapper {
+    vertical-align: bottom
+}
+
+.animated-headline-dynamic-wrapper {
+    display: inline-block;
+    position: relative
+}
+
+.animated-headline-dynamic-wrapper .animated-headline-dynamic-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.animated-headline-dynamic-wrapper .animated-headline-dynamic-text.animated-headline-text-active {
+    position: relative
+}
+
+
+@keyframes animated-headline-flip-in {
+    0% {
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+
+    35% {
+        transform: rotateX(120deg);
+        opacity: 0
+    }
+
+    65% {
+        opacity: 0
+    }
+
+    to {
+        transform: rotateX(1turn);
+        opacity: 1
+    }
+}
+
+@keyframes animated-headline-flip-out {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1
+    }
+
+    35% {
+        transform: rotateX(-40deg);
+        opacity: 1
+    }
+
+    65% {
+        opacity: 0
+    }
+
+    to {
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+}
+
+
+
 
 @media screen and (max-width: 1140px) {
     .container {
